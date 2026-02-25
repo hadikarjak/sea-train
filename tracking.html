@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Start Head Info -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea Train Lines | Tracking</title>
+    <meta data-n-head="ssr" name="theme-color" content="#4361ee">
+    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="imgs/Seatrain.svg">
+    <meta data-n-head="ssr" data-hid="og:image:secure_url" property="og:image:secure_url" content="imgs/Seatrain.svg">
+    <meta data-n-head="ssr" data-hid="og:image:alt" property="og:image:alt" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="twitter:image" name="twitter:image" content="imgs/Seatrain.svg">
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-capable" name="apple-mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-status-bar-style"
+        name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title"
+        content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="author" name="author" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="i18n-og" property="og:locale" content="ar">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Sea Train Lines">
+    <link data-n-head="ssr" rel="icon" type="image/png" href="imgs/favicon.png">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/Seatrain.svg">
+    <!-- End Head Info -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start To Top -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <div class="btt-icon">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <span class="btt-text">Top</span>
+    </a>
+    <!-- End To Top -->
+    <!-- Start Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="logo-icon">
+                    <img src="imgs/Seatrain.svg" width="30px" alt="logo">
+                </div>
+                <div class="logo-text">
+                    Sea<span>Train</span>
+                </div>
+            </div>
+            <div class="loader-animation">
+                <div class="loader-bar"></div>
+                <div class="loader-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="loader-text">
+                <span class="loading-text">Loading</span>
+                <span class="loading-dots">
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End Loader -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img class="logo-icon" src="imgs/Seatrain.svg" width="30px" alt="">
+                <div class="logo-text">
+                    Sea<span>Train</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="index.html">
+                            <i class="fas fa-home me-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#">
+                            <i class="fas fa-search me-2"></i>
+                            Enter tracking ID
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="about.html">
+                            <i class="fas fa-box me-2"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-cog me-2"></i>
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-custom">
+                            <li>
+                                <a class="dropdown-item dropdown-item-custom" href="services.html">
+                                    <i class="fas fa-truck"></i>
+                                    Ocean Freight
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item-custom" href="services.html">
+                                    <i class="fas fa-plane"></i>
+                                    Air Freight
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item-custom" href="services.html">
+                                    <i class="fas fa-train"></i>
+                                    Land Shipping
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="contact.html">
+                            <i class="fas fa-headset me-2"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-menu-2">
+                    <a href="tracking.html" style="text-decoration: none;">
+                        <div class="search-avatar">
+                            <i class="fas fa-search me-2"></i> Enter tracking ID
+                        </div>
+                    </a>
+                </div>
+                <div class="user-menu">
+                    <div class="notification-badge">
+                        Sea Train
+                    </div>
+                    <div class="dropdown">
+                        <div class="logo-avatar" data-bs-toggle="dropdown">
+                            ST
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start TimeLine -->
+    <div class="tracking-page">
+        <!-- ================ القسم الأول - فورم البحث عن الشحنة ================ -->
+        <section class="tracking-search-section">
+            <div class="tracking-search-wrapper">
+                <!-- رأس القسم -->
+                <div class="search-header">
+                    <span class="search-badge">TRACK YOUR SHIPMENT</span>
+                    <h1 class="search-title">Enter Your Tracking Number</h1>
+                    <p class="search-description">Please provide your tracking number and select the shipment type to
+                        get real-time updates</p>
+                </div>
+                <!-- فورم البحث - تصميم محسن -->
+                <div class="search-form-container">
+                    <form class="tracking-form" id="trackingForm">
+                        <div class="form-row">
+                            <!-- حقل رقم الشحنة - Input Text -->
+                            <div class="form-group">
+                                <label for="trackingNumber" class="form-label">
+                                    <i class="fas fa-hashtag"></i>
+                                    Tracking Number
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-input" id="trackingNumber" name="trackingNumber"
+                                        placeholder="STL-984567-24" required>
+                                    <span class="input-focus-border"></span>
+                                </div>
+                            </div>
+                            <!-- حقل نوع الشحنة - Select -->
+                            <div class="form-group">
+                                <label for="shipmentType" class="form-label">
+                                    <i class="fas fa-ship"></i>
+                                    Shipment Type
+                                </label>
+                                <div class="select-wrapper">
+                                    <select class="form-select" id="shipmentType" name="shipmentType" required>
+                                        <option value="" disabled selected>Select type</option>
+                                        <option value="ocean">Ocean Freight</option>
+                                        <option value="air">Air Freight</option>
+                                        <option value="land">Land Shipping</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-arrow"></i>
+                                    <span class="input-focus-border"></span>
+                                </div>
+                            </div>
+                            <!-- زر البحث - موازي تماماً للحقول -->
+                            <div class="form-group button-group">
+                                <button type="submit" class="search-button">
+                                    <span class="button-icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                    <span class="button-text">Track</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- عناصر زخرفية -->
+            <div class="search-shape shape-1"></div>
+            <div class="search-shape shape-2"></div>
+            <div class="search-shape shape-3"></div>
+        </section>
+    </div>
+    <!-- Start Result Search  -->
+    <section class="tracking-result-section">
+        <div class="tracking-result-wrapper">
+            <!-- رأس القسم -->
+            <div class="result-header">
+                <div class="result-title-wrapper">
+                    <i class="fas fa-search-location icon-result"></i>
+                    <h2 class="result-title">Shipment Tracking Result</h2>
+                </div>
+                <span class="result-date">Last updated: Just now</span>
+            </div>
+            <!-- بطاقة معلومات الشحنة الرئيسية -->
+            <div class="shipment-main-card">
+                <!-- الصف العلوي - رقم الشحنة مع أيقونة -->
+                <div class="shipment-id-row">
+                    <div class="id-wrapper">
+                        <i class="fas fa-box icon-result"></i>
+                        <span class="id-label">Tracking Number:</span>
+                        <span class="id-number">STL-984567-24</span>
+                    </div>
+                    <button class="print-button" onclick="window.print()">
+                        <i class="fas fa-print"></i>
+                        <span>Print Details</span>
+                    </button>
+                </div>
+                <!-- نص وصفي للشحنة -->
+                <p class="shipment-description">
+                    20ft Container - Electronics and consumer goods - Standard ocean freight service from Shanghai to
+                    Los Angeles
+                </p>
+                <!-- شبكة المعلومات -->
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Id</span>
+                            <span class="info-value">STL-984567-24</span>
+                        </div>
+                    </div>
+                    <!-- من (المصدر) -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">From</span>
+                            <span class="info-value">Shanghai, China</span>
+                            <span class="info-sub">Port of Shanghai</span>
+                        </div>
+                    </div>
+                    <!-- إلى (الوجهة) -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">To</span>
+                            <span class="info-value">Los Angeles, USA</span>
+                            <span class="info-sub">Port of Los Angeles</span>
+                        </div>
+                    </div>
+                    <!-- تاريخ الوصول المتوقع -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Estimated Arrival</span>
+                            <span class="info-value">March 15, 2024</span>
+                            <span class="info-sub">In 12 days</span>
+                        </div>
+                    </div>
+                    <!-- آخر تحديث -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Last Updated</span>
+                            <span class="info-value">February 25, 2025</span>
+                            <span class="info-sub">10:30 AM GMT</span>
+                        </div>
+                    </div>
+                    <!-- اخر موقع تم الوصول اليه -->
+                    <div class="info-item live-location">
+                        <div class="info-icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Last Location</span>
+                            <span class="info-value">
+                                <span class="pulse-dot"></span>
+                                Pacific Ocean
+                            </span>
+                            <span class="info-sub">Position: 32.5°N, 175.3°E · Moving East</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Result Search  -->
+    <!-- Start TimeLine Result -->
+    <section class="tracking-timeline-section">
+        <div class="timeline-wrapper">
+            <!-- رأس القسم -->
+            <div class="timeline-header">
+                <div class="header-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="header-text">
+                    <h2 class="timeline-title">Shipment Journey Timeline</h2>
+                    <p class="timeline-subtitle">Real-time tracking of your cargo from origin to destination</p>
+                </div>
+                <div class="header-status">
+                    <span class="status-badge completed">Completed</span>
+                    <span class="status-badge in-progress">In Progress</span>
+                    <span class="status-badge pending">Pending</span>
+                </div>
+            </div>
+            <!-- حاوية التتبع الرئيسية -->
+            <div class="timeline-container">
+                <!-- النقطة 1 - تم الوصول (جميع الإجراءات مكتملة) -->
+                <div class="timeline-point completed">
+                    <div class="point-card">
+                        <div class="point-header">
+                            <div class="point-number completed">01</div>
+                            <div class="point-titles">
+                                <h3 class="point-main-title">Shanghai Port</h3>
+                                <p class="point-sub-title">Yangshan Deep Water Port, Terminal 3</p>
+                            </div>
+                            <span class="point-status">Completed</span>
+                        </div>
+                        <div class="point-actions">
+                            <!-- الإجراء 1 - رفع -->
+                            <div class="action-item completed">
+                                <div class="action-icon">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Loading</span>
+                                        <span class="action-date">Feb 20, 09:15</span>
+                                    </div>
+                                    <p class="action-info">Container loaded onto vessel MSC Aurora</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 2 - فحص -->
+                            <div class="action-item completed">
+                                <div class="action-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Inspection</span>
+                                        <span class="action-date">Feb 20, 10:30</span>
+                                    </div>
+                                    <p class="action-info">Customs clearance completed successfully</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 3 - مغادرة -->
+                            <div class="action-item completed">
+                                <div class="action-icon">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Departure</span>
+                                        <span class="action-date">Feb 20, 14:00</span>
+                                    </div>
+                                    <p class="action-info">Vessel departed from Shanghai port</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- النقطة 2 - جاري التقدم (بعض الإجراءات مكتملة) -->
+                <div class="timeline-point in-progress">
+                    <div class="point-card">
+                        <div class="point-header">
+                            <div class="point-number in-progress">02</div>
+                            <div class="point-titles">
+                                <h3 class="point-main-title">Busan Port</h3>
+                                <p class="point-sub-title">South Korea - Transshipment Hub</p>
+                            </div>
+                            <span class="point-status">In Progress</span>
+                        </div>
+                        <div class="point-actions">
+                            <!-- الإجراء 1 - وصول (مكتمل) -->
+                            <div class="action-item completed">
+                                <div class="action-icon">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Arrival</span>
+                                        <span class="action-date">Feb 22, 06:45</span>
+                                    </div>
+                                    <p class="action-info">Vessel arrived at Busan port</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 2 - تفريغ (قيد التنفيذ) -->
+                            <div class="action-item in-progress">
+                                <div class="action-icon">
+                                    <i class="fas fa-boxes"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Unloading</span>
+                                        <span class="action-date">In Progress</span>
+                                    </div>
+                                    <p class="action-info">Container being transferred to connecting vessel</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 3 - إعادة تحميل (قادم) -->
+                            <div class="action-item in-progress">
+                                <div class="action-icon">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Reloading</span>
+                                        <span class="action-date">Expected soon</span>
+                                    </div>
+                                    <p class="action-info">Container scheduled for reloading</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- النقطة 3 - في الطريق (جميع الإجراءات قادمة) -->
+                <div class="timeline-point in-progress">
+                    <div class="point-card">
+                        <div class="point-header">
+                            <div class="point-number in-progress">03</div>
+                            <div class="point-titles">
+                                <h3 class="point-main-title">Pacific Ocean</h3>
+                                <p class="point-sub-title">In Transit - North Pacific Route</p>
+                            </div>
+                            <span class="point-status">In Progress</span>
+                        </div>
+                        <div class="point-actions">
+                            <!-- الإجراء 1 - عبور المحيط -->
+                            <div class="action-item pending">
+                                <div class="action-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Crossing</span>
+                                        <span class="action-date">Feb 22-25</span>
+                                    </div>
+                                    <p class="action-info">Vessel crossing Pacific Ocean - ETA Feb 25</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 2 - تحديث موقع -->
+                            <div class="action-item pending">
+                                <div class="action-icon">
+                                    <i class="fas fa-map-pin"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Position Update</span>
+                                        <span class="action-date">Every 6h</span>
+                                    </div>
+                                    <p class="action-info">Current position: 42.5°N, 165.3°W</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- النقطة 4 - قادمة (جميع الإجراءات مستقبلية) -->
+                <div class="timeline-point pending">
+                    <div class="point-card">
+                        <div class="point-header">
+                            <div class="point-number pending">04</div>
+                            <div class="point-titles">
+                                <h3 class="point-main-title">Los Angeles Port</h3>
+                                <p class="point-sub-title">California, USA - Final Destination</p>
+                            </div>
+                            <span class="point-status">Expected</span>
+                        </div>
+                        <div class="point-actions">
+                            <!-- الإجراء 1 - وصول -->
+                            <div class="action-item pending">
+                                <div class="action-icon">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Arrival</span>
+                                        <span class="action-date">Feb 26</span>
+                                    </div>
+                                    <p class="action-info">Estimated arrival at Los Angeles port</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 2 - تفريغ -->
+                            <div class="action-item pending">
+                                <div class="action-icon">
+                                    <i class="fas fa-boxes"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Unloading</span>
+                                        <span class="action-date">Feb 27</span>
+                                    </div>
+                                    <p class="action-info">Container discharge from vessel</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 3 - تخليص جمركي -->
+                            <div class="action-item pending">
+                                <div class="action-icon">
+                                    <i class="fas fa-file-signature"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Customs</span>
+                                        <span class="action-date">Feb 28</span>
+                                    </div>
+                                    <p class="action-info">US Customs clearance process</p>
+                                </div>
+                            </div>
+                            <!-- الإجراء 4 - تسليم -->
+                            <div class="action-item pending">
+                                <div class="action-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="action-details">
+                                    <div class="action-header">
+                                        <span class="action-name">Delivery</span>
+                                        <span class="action-date">Mar 1</span>
+                                    </div>
+                                    <p class="action-info">Final delivery to consignee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- وسيلة إيضاح التتبع -->
+            <div class="timeline-legend">
+                <div class="legend-item">
+                    <span class="legend-color completed"></span>
+                    <span class="legend-text">Completed actions</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color in-progress"></span>
+                    <span class="legend-text">In progress actions</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color pending"></span>
+                    <span class="legend-text">Pending actions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="notice-bar">
+        <div class="notice-content">
+            <div class="notice-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="notice-text-wrapper">
+                <div class="notice-text">
+                    <span class="notice-label">Note:</span>
+                    All times are given in local time, unless otherwise stated.
+                </div>
+            </div>
+            <div class="notice-close" onclick="this.parentElement.parentElement.remove()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <!-- End TimeLine Result -->
+    <!-- End TimeLine -->
+    <!-- Start Footer -->
+    <footer class="footer-showcase">
+        <div class="footer-wrapper">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="imgs/Seatrain.svg" width="20px" alt="logo">
+                        </div>
+                        <div class="logo-text">
+                            Sea<span>Train</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted global logistics partner since 2005. We provide reliable shipping solutions across
+                        ocean, air, and land networks with real-time tracking and full visibility.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Track Shipment</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact & Locations</h3>
+                    <div class="footer-emails">
+                        <h4 class="footer-subtitle">Email Us</h4>
+                        <a href="mailto:support@shiptrack.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@shiptrack.com</span>
+                        </a>
+                        <a href="mailto:sales@shiptrack.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sales@shiptrack.com</span>
+                        </a>
+                        <a href="mailto:info@shiptrack.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@shiptrack.com</span>
+                        </a>
+                    </div>
+                    <div class="footer-locations">
+                        <h4 class="footer-subtitle">Our Offices</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Bay, Dubai, UAE</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>456 Ocean Road, Shanghai, China</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>789 Continental Ave, Rotterdam, Netherlands</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 SeaTrain Logistics. All rights reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">BY With : Hadi Karjak</span>
+                    <span class="badge">SyriaTech Company</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Bootstrap JS -->
+    <script src="js/my-jquery.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

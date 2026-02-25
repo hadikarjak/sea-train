@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Start Head Info -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea Train Lines | Main</title>
+    <meta data-n-head="ssr" name="theme-color" content="#4361ee">
+    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="imgs/Seatrain.svg">
+    <meta data-n-head="ssr" data-hid="og:image:secure_url" property="og:image:secure_url" content="imgs/Seatrain.svg">
+    <meta data-n-head="ssr" data-hid="og:image:alt" property="og:image:alt" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="twitter:image" name="twitter:image" content="imgs/Seatrain.svg">
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-capable" name="apple-mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-status-bar-style"
+        name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title"
+        content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="author" name="author" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="i18n-og" property="og:locale" content="ar">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Sea Train Lines">
+    <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Sea Train Lines">
+    <link data-n-head="ssr" rel="icon" type="image/png" href="imgs/favicon.png">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/Seatrain.svg">
+    <!-- End Head Info -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start To Top -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <div class="btt-icon">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <span class="btt-text">Top</span>
+    </a>
+    <!-- End To Top -->
+    <!-- Start Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="logo-icon">
+                    <img src="imgs/Seatrain.svg" width="30px" alt="logo">
+                </div>
+                <div class="logo-text">
+                    Sea<span>Train</span>
+                </div>
+            </div>
+            <div class="loader-animation">
+                <div class="loader-bar"></div>
+                <div class="loader-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="loader-text">
+                <span class="loading-text">Loading</span>
+                <span class="loading-dots">
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End Loader -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img class="logo-icon" src="imgs/Seatrain.svg" width="30px" alt="">
+                <div class="logo-text">
+                    Sea<span>Train</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#">
+                            <i class="fas fa-home me-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="tracking.html">
+                            <i class="fas fa-search me-2"></i>
+                            Enter tracking ID
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="about.html">
+                            <i class="fas fa-box me-2"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-cog me-2"></i>
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-custom">
+                            <li>
+                                <a class="dropdown-item dropdown-item-custom" href="services.html">
+                                    <i class="fas fa-truck"></i>
+                                    Ocean Freight
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item-custom" href="services.html">
+                                    <i class="fas fa-plane"></i>
+                                    Air Freight
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item dropdown-item-custom" href="services.html">
+                                    <i class="fas fa-train"></i>
+                                    Land Shipping
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="contact.html">
+                            <i class="fas fa-headset me-2"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-menu-2">
+                    <a href="tracking.html" style="text-decoration: none;">
+                        <div class="search-avatar">
+                            <i class="fas fa-search me-2"></i> Enter tracking ID
+                        </div>
+                    </a>
+                </div>
+                <div class="user-menu">
+                    <div class="notification-badge">
+                        Sea Train
+                    </div>
+                    <div class="dropdown">
+                        <div class="logo-avatar" data-bs-toggle="dropdown">
+                            ST
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Landing -->
+    <section class="landing-section">
+        <div class="landing-wrapper">
+            <div class="image-showcase" id="imageShowcase">
+                <div class="slides-wrapper">
+                    <div class="slide-item slide-item-1" id="slide1"></div>
+                    <div class="slide-item slide-item-2" id="slide2"></div>
+                    <div class="slide-item slide-item-3" id="slide3"></div>
+                    <div class="slide-item slide-item-4" id="slide4"></div>
+                </div>
+                <div class="image-overlay"></div>
+                <div class="slides-controller" id="slidesController">
+                    <div class="control-dot" data-slide="0"></div>
+                    <div class="control-dot" data-slide="1"></div>
+                    <div class="control-dot" data-slide="2"></div>
+                    <div class="control-dot" data-slide="3"></div>
+                </div>
+                <div class="auto-play-toggle" id="autoPlayToggle">
+                    <i class="fas fa-pause" id="playPauseIcon"></i>
+                </div>
+                <div class="slide-progress" id="slideProgress"></div>
+            </div>
+            <div class="content-showcase">
+                <div class="welcome-content">
+                    <div class="welcome-badge">
+                        <span class="badge-pulse"></span>
+                        <span class="badge-text">WELCOME TO SeaTrain Lines</span>
+                    </div>
+                    <h1 class="main-headline">
+                        Global Shipping
+                        <span class="headline-highlight">Simplified</span>
+                        <br>For Your Business
+                    </h1>
+                    <p class="descriptive-text">
+                        Track your shipments in real-time across ocean, air, and land networks.
+                        Join thousands of businesses who trust us with their logistics needs.
+                    </p>
+                    <a href="tracking.html" class="tracking-action-btn">
+                        <span>Track Your Shipment</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <div class="quick-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label text-secondary">Shipments</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label text-secondary">Countries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label text-secondary">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Landing -->
+    <!-- Start Services -->
+    <section class="services-showcase">
+        <div class="services-wrapper">
+            <div class="services-header">
+                <span class="services-badge">OUR SERVICES</span>
+                <h2 class="services-title">Global Shipping Solutions</h2>
+                <p class="services-description">Comprehensive freight services across all major transport modes with
+                    real-time tracking and full visibility</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-decoration"></div>
+                    <div class="card-icon-wrapper air-cloud">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="card-title">Air Freight</h3>
+                    <p class="card-text">Express and economy air freight solutions for time-sensitive shipments with
+                        complete tracking and fast transit times.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check icon-f"></i> Express & economy options</li>
+                        <li><i class="fas fa-check icon-f"></i> Airport-to-airport & door</li>
+                        <li><i class="fas fa-check icon-f"></i> Live flight tracking</li>
+                    </ul>
+                    <a href="services.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card featured">
+                    <div class="card-badge">MOST POPULAR</div>
+                    <div class="card-decoration"></div>
+                    <div class="card-icon-wrapper ocean-wave">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 class="card-title">Ocean Freight</h3>
+                    <p class="card-text">Full container load (FCL) and less than container load (LCL) services to major
+                        ports worldwide with competitive rates.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check icon-f"></i> FCL & LCL options</li>
+                        <li><i class="fas fa-check icon-f"></i> Port-to-port & door-to-door</li>
+                        <li><i class="fas fa-check icon-f"></i> Real-time vessel tracking</li>
+                    </ul>
+                    <a href="services.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="card-decoration"></div>
+                    <div class="card-icon-wrapper land-mountain">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="card-title">Land Shipping</h3>
+                    <p class="card-text">Comprehensive road and rail freight services across borders with full tracking
+                        and reliable delivery schedules.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check icon-f"></i> FTL & LTL options</li>
+                        <li><i class="fas fa-check icon-f"></i> Cross-border expertise</li>
+                        <li><i class="fas fa-check icon-f"></i> GPS vehicle tracking</li>
+                    </ul>
+                    <a href="services.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="services-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15,000+</span>
+                    <span class="stat-label">Monthly Shipments</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">120+</span>
+                    <span class="stat-label">Countries Covered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">98.5%</span>
+                    <span class="stat-label">On-Time Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End services -->
+    <!-- Start About Us -->
+    <section class="about-showcase">
+        <div class="about-wrapper">
+            <div class="about-header">
+                <span class="about-badge">ABOUT US</span>
+                <h2 class="about-title">Your Trusted Logistics Partner Since 2005</h2>
+                <p class="about-description">With over 18 years of experience, we've built a reputation for reliability,
+                    transparency, and excellence in global freight forwarding.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="main-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070"
+                            alt="Modern logistics warehouse" class="main-image">
+                        <div class="image-overlay-shine"></div>
+                    </div>
+                    <div class="secondary-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070"
+                            alt="Shipping containers at port" class="secondary-image">
+                        <div class="image-stat-badge">
+                            <span class="stat-number">18+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                    </div>
+                    <div class="about-shape shape-1"></div>
+                    <div class="about-shape shape-2"></div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-subtitle">We Don't Just Ship Packages, We Deliver Peace of Mind</h3>
+                    <p class="about-paragraph">
+                        Founded in 2005, ShipTrack started as a small local courier service and has grown into a
+                        comprehensive global logistics provider. Today, we manage thousands of shipments monthly across
+                        ocean, air, and land networks, serving businesses of all sizes.
+                    </p>
+                    <div class="about-features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Global Network</h4>
+                                <p>120+ countries with reliable local partners</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Secure Handling</h4>
+                                <p>End-to-end security and insurance options</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Real-Time Tracking</h4>
+                                <p>24/7 visibility of your shipments</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Dedicated Support</h4>
+                                <p>Personal account managers for every client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-number">50K+</span>
+                            <span class="achievement-label">Happy Clients</span>
+                        </div>
+                        <div class="achievement-divider"></div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">15K+</span>
+                            <span class="achievement-label">Monthly Shipments</span>
+                        </div>
+                        <div class="achievement-divider"></div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">24/7</span>
+                            <span class="achievement-label">Customer Support</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="about-cta">
+                        <span>Learn More About Us</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+    <!-- Start TimeLine Example -->
+    <section class="tracking-showcase">
+        <div class="tracking-wrapper">
+            <div class="tracking-header">
+                <span class="tracking-badge">TRACKING SYSTEM</span>
+                <h2 class="tracking-title">Real-Time Shipment Visibility</h2>
+                <p class="tracking-description">Advanced tracking technology that gives you complete control and
+                    transparency over your shipments from origin to destination</p>
+            </div>
+            <div class="tracking-content">
+                <div class="tracking-visual">
+                    <div class="visual-wrapper">
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070"
+                            alt="Digital shipment tracking interface" class="tracking-main-image">
+                        <div class="visual-scan-line"></div>
+                        <div class="visual-icon icon-1">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <div class="visual-icon icon-2">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="visual-icon icon-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="visual-dot dot-1"></div>
+                        <div class="visual-dot dot-2"></div>
+                        <div class="visual-dot dot-3"></div>
+                    </div>
+                </div>
+                <div class="tracking-demo">
+                    <div class="demo-header">
+                        <h3 class="demo-title">Live Shipment Tracking Demo</h3>
+                        <span class="demo-badge">TRK-984567</span>
+                    </div>
+                    <div class="shipment-info">
+                        <div class="info-row">
+                            <div class="info-block">
+                                <span class="info-label">Origin</span>
+                                <span class="info-value">Shanghai, China</span>
+                            </div>
+                            <div class="info-arrow">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                            <div class="info-block">
+                                <span class="info-label">Destination</span>
+                                <span class="info-value">Los Angeles, USA</span>
+                            </div>
+                        </div>
+                        <div class="info-progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <div class="info-status">
+                            <span class="status-label">Estimated Arrival:</span>
+                            <span class="status-value">Jan 25, 2024 (4 days remaining)</span>
+                        </div>
+                    </div>
+                    <!-- Timeline مصغر -->
+                    <div class="demo-timeline">
+                        <!-- النقطة 1 -->
+                        <div class="timeline-node completed">
+                            <div class="node-marker">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="node-content">
+                                <span class="node-title">Order Received</span>
+                                <span class="node-date">Jan 15</span>
+                            </div>
+                        </div>
+                        <!-- النقطة 2 -->
+                        <div class="timeline-node completed">
+                            <div class="node-marker">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="node-content">
+                                <span class="node-title">Processing</span>
+                                <span class="node-date">Jan 16</span>
+                            </div>
+                        </div>
+                        <!-- النقطة 3 -->
+                        <div class="timeline-node completed">
+                            <div class="node-marker">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="node-content">
+                                <span class="node-title">Packaging</span>
+                                <span class="node-date">Jan 17</span>
+                            </div>
+                        </div>
+                        <!-- النقطة 4 (نشطة) -->
+                        <div class="timeline-node active">
+                            <div class="node-marker">
+                                <div class="pulse-dot"></div>
+                            </div>
+                            <div class="node-content">
+                                <span class="node-title">In Transit</span>
+                                <span class="node-date">Current</span>
+                            </div>
+                        </div>
+                        <!-- النقطة 5 -->
+                        <div class="timeline-node">
+                            <div class="node-marker">
+                                <span class="marker-number">5</span>
+                            </div>
+                            <div class="node-content">
+                                <span class="node-title">Out for Delivery</span>
+                                <span class="node-date">Pending</span>
+                            </div>
+                        </div>
+                        <!-- النقطة 6 -->
+                        <div class="timeline-node">
+                            <div class="node-marker">
+                                <span class="marker-number">6</span>
+                            </div>
+                            <div class="node-content">
+                                <span class="node-title">Delivered</span>
+                                <span class="node-date">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- رابط التجربة -->
+                    <a href="tracking.html" class="about-cta">
+                        <span>Try Live Tracking</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- مميزات نظام التتبع -->
+            <div class="tracking-features">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Real-Time Updates</h4>
+                    <p>Instant notifications at every stage of your shipment's journey</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h4>GPS Tracking</h4>
+                    <p>Live location tracking for land and ocean shipments</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h4>Full History</h4>
+                    <p>Complete timeline of all events from pickup to delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End TimeLine Example -->
+    <!-- Start Contact -->
+    <section class="contact-showcase">
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <span class="contact-badge">GET IN TOUCH</span>
+                <h2 class="contact-title">Connect With Our Team</h2>
+                <p class="contact-description">Have questions about your shipment or our services? Reach out to us
+                    through any of these channels</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-emails">
+                    <h3 class="contact-subtitle">Email Addresses</h3>
+                    <div class="emails-grid">
+                        <a href="mailto:support@shiptrack.com" class="email-card">
+                            <div class="email-icon-wrapper">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="email-details">
+                                <span class="email-label">Customer Support</span>
+                                <span class="email-address">support@shiptrack.com</span>
+                            </div>
+                            <div class="email-arrow">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </a>
+                        <a href="mailto:sales@shiptrack.com" class="email-card">
+                            <div class="email-icon-wrapper">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="email-details">
+                                <span class="email-label">Sales Department</span>
+                                <span class="email-address">sales@shiptrack.com</span>
+                            </div>
+                            <div class="email-arrow">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </a>
+                        <a href="mailto:info@shiptrack.com" class="email-card">
+                            <div class="email-icon-wrapper">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="email-details">
+                                <span class="email-label">General Inquiries</span>
+                                <span class="email-address">info@shiptrack.com</span>
+                            </div>
+                            <div class="email-arrow">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-addresses">
+                    <h3 class="contact-subtitle">Office Locations</h3>
+                    <div class="addresses-grid">
+                        <div class="address-card">
+                            <div class="address-icon-wrapper">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="address-details">
+                                <span class="address-label">Headquarters</span>
+                                <span class="address-text">123 Business Bay, Dubai, UAE</span>
+                            </div>
+                        </div>
+                        <div class="address-card">
+                            <div class="address-icon-wrapper">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="address-details">
+                                <span class="address-label">Asia Pacific</span>
+                                <span class="address-text">456 Ocean Road, Shanghai, China</span>
+                            </div>
+                        </div>
+                        <div class="address-card">
+                            <div class="address-icon-wrapper">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="address-details">
+                                <span class="address-label">Europe</span>
+                                <span class="address-text">789 Continental Ave, Rotterdam, Netherlands</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-hours">
+                <div class="hours-card">
+                    <div class="hours-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="hours-details">
+                        <span class="hours-label">Working Hours</span>
+                        <span class="hours-text">24/7 Customer Support - Always Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <footer class="footer-showcase">
+        <div class="footer-wrapper">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="imgs/Seatrain.svg" width="20px" alt="logo">
+                        </div>
+                        <div class="logo-text">
+                            Sea<span>Train</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted global logistics partner since 2005. We provide reliable shipping solutions across
+                        ocean, air, and land networks with real-time tracking and full visibility.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="tracking.html"><i class="fas fa-chevron-right"></i> Track Shipment</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact & Locations</h3>
+                    <div class="footer-emails">
+                        <h4 class="footer-subtitle">Email Us</h4>
+                        <a href="mailto:support@shiptrack.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@shiptrack.com</span>
+                        </a>
+                        <a href="mailto:sales@shiptrack.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sales@shiptrack.com</span>
+                        </a>
+                        <a href="mailto:info@shiptrack.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@shiptrack.com</span>
+                        </a>
+                    </div>
+                    <div class="footer-locations">
+                        <h4 class="footer-subtitle">Our Offices</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Bay, Dubai, UAE</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>456 Ocean Road, Shanghai, China</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>789 Continental Ave, Rotterdam, Netherlands</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 SeaTrain Logistics. All rights reserved.
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">BY With : Hadi Karjak</span>
+                    <span class="badge">SyriaTech Company</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Bootstrap JS -->
+    <script src="js/my-jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
