@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeaTrain Company | New Shipment</title>
+      <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/Seatrain.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand">
+              <img src="imgs/Seatrain.svg" width="25" alt="SeaTrain" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" aria-current="page" href="dashboard.html">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">New Shipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="recent-shipments.html">Recent Shipments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="all-shipments.html">All Shipments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="shipments-posted.html">Shipments Posted</a>
+                    </li>
+                </ul>
+                <div class="search ps-3 pe-3 d-none d-lg-block">
+                     <img src="imgs/Seatrain.svg" width="20" alt="SeaTrain">
+                </div>
+                <center>
+                    <a class="more text-white" href="#">My Site</a>
+                </center>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5" id="features">
+        <div class="container px-5 my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="banar">
+                        <h4 class="text-start color-dark my-3">Add New Shipment</h4>
+                        <div class="pp text-start my-3">
+                            <p class="mt-1 mb-3">
+                                Note :
+                                This information is general to the shipment .
+                            </p>
+                        </div>
+                        <hr class="mt-1 mb-4 mx-4 v-divider theme--light">
+                        <form action="">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" name="" id="shipment-name" class="input-elem"
+                                            placeholder="Enter Shipment Name" autocomplete="off" />
+                                        <label for="shipment-name">Shipment Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" name="" id="shipment-id" class="input-elem"
+                                            placeholder="Enter Shipment Id" autocomplete="off" />
+                                        <label for="shipment-id">Shipment Id</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <select style="background-color :#f4f4f4;color:#1f1a17;" id="num"
+                                            name="booking-type" class="input-elem">
+                                            <option value="ocean">Ocean Cargo</option>
+                                            <option value="air">Air Cargo</option>
+                                            <option value="lcl">LCL Cargo</option>
+                                        </select>
+                                        <label for="num">Select Booking Type :</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="date" name="" id="start-date" class="input-elem"
+                                            autocomplete="off" />
+                                        <label for="start-date">Starting Date (2024/01/01)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="time" name="" id="hour-start" class="input-elem"
+                                            autocomplete="off" />
+                                        <label for="hour-start">Departure Hour (12:00 AM)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="date" name="" id="arrival-date" class="input-elem"
+                                            autocomplete="off" />
+                                        <label for="arrival-date">Expected Arrival Date (2024/03/01)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="time" name="" id="hour-arrival" class="input-elem"
+                                            autocomplete="off" />
+                                        <label for="hour-arrival">Arrival Hour (12:00 PM)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea class="area-text mt-3 mb-3"
+                                        placeholder="Enter Some Details ..."></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-register">Add New Shipment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/input.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

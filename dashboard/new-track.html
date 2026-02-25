@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeaTrain Company | New Track</title>
+      <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/Seatrain.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand">
+                 <img src="imgs/Seatrain.svg" width="25" alt="SeaTrain" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" aria-current="page" href="dashboard.html">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" aria-current="page" href="new-shipment.html">New Shipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="recent-shipments.html">Recent Shipments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="all-shipments.html">All Shipments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="shipments-posted.html">Shipments Posted</a>
+                    </li>
+                </ul>
+                <div class="search ps-3 pe-3 d-none d-lg-block">
+                     <img src="imgs/Seatrain.svg" width="20" alt="SeaTrain">
+                </div>
+                <center>
+                    <a class="more text-white" href="#">My Site</a>
+                </center>
+            </div>
+        </div>
+    </nav>
+    <header class="example-header text-center bg-grey-400 p-3 mt-3">
+        <h2 class="mt-1 color-dark">Shipment Id</h2>
+        <p class="mb-1 h5 color-main">mrku9210233</p>
+    </header>
+    <!--Form Add Region-->
+    <section class="py-5" id="features">
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <h2 class="fw-bolder mb-0 color-main">Add Regions Main</h2>
+                    <p class="text-gray mt-3 mb-4">
+                        Add the main regions of the tracing line
+                    </p>
+                    <!-- Start Notifications -->
+                    <div class="success mb-4">
+                        <p class="msg-success">The Region Has Been Added Successfully</p>
+                    </div>
+                    <div class="false mb-4">
+                        <p class="msg-false">Something Went Wrong</p>
+                    </div>
+                    <!-- End Notifications -->
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" name="" id="name-region" class="input-elem"
+                                placeholder="Enter Name Region" autocomplete="off" />
+                            <label for="name-region">Name Region</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="" id="sec-name" class="input-elem"
+                                placeholder="Enter Secondary Name Of The Region" autocomplete="off" />
+                            <label for="sec-name">Secondary Name Of The Region</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="" id="sec-name" class="input-elem"
+                                placeholder="Paste Location Link" autocomplete="off" />
+                            <label for="sec-name">Locatin On Map</label>
+                        </div>
+                        <button class="btn btn-register bg-gradient">Add Region</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <!-- Start Last Regions Progress Widget -->
+                    <div class="last-regions">
+                        <h2>Last Regions Added :</h2>
+                        <ul>
+                            <li>
+                                <div class="region-info">
+                                    <h6>MERSIN</h6>
+                                    <p> mersin mer ist </p>
+                                    <a href="new-action.html"><i class="fas fa-plus-circle"></i> Add Action</a>
+                                    <button class="edit-region"><i class="far fa-edit"></i> Edit</button>
+                                    <button class="delete-region"><i class="far fa-trash-alt"></i> Delete</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="region-info">
+                                    <h6>MERSIN</h6>
+                                    <p> mersin mer ist </p>
+                                    <a href="new-action.html"><i class="fas fa-plus-circle"></i> Add Action</a>
+                                    <button class="edit-region"><i class="far fa-edit"></i> Edit</button>
+                                    <button class="delete-region"><i class="far fa-trash-alt"></i> Delete</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="region-info">
+                                    <h6>MERSIN</h6>
+                                    <p> mersin mer ist </p>
+                                    <a href="new-action.html"><i class="fas fa-plus-circle"></i> Add Action</a>
+                                    <button class="edit-region"><i class="far fa-edit"></i> Edit</button>
+                                    <button class="delete-region"><i class="far fa-trash-alt"></i> Delete</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="region-info">
+                                    <h6>MERSIN</h6>
+                                    <p> mersin mer ist </p>
+                                    <a href="new-action.html"><i class="fas fa-plus-circle"></i> Add Action</a>
+                                    <button class="edit-region"><i class="far fa-edit"></i> Edit</button>
+                                    <button class="delete-region"><i class="far fa-trash-alt"></i> Delete</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="region-info">
+                                    <h6>MERSIN</h6>
+                                    <p> mersin mer ist </p>
+                                    <a href="new-action.html"><i class="fas fa-plus-circle"></i> Add Action</a>
+                                    <button class="edit-region"><i class="far fa-edit"></i> Edit</button>
+                                    <button class="delete-region"><i class="far fa-trash-alt"></i> Delete</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="region-info">
+                                    <h6>MERSIN</h6>
+                                    <p> mersin mer ist </p>
+                                    <a href="new-action.html"><i class="fas fa-plus-circle"></i> Add Action</a>
+                                    <button class="edit-region"><i class="far fa-edit"></i> Edit</button>
+                                    <button class="delete-region"><i class="far fa-trash-alt"></i> Delete</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Last Regions Progress Widget -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
